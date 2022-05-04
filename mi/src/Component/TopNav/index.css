@@ -1,0 +1,337 @@
+div.container {
+  width: 100%;
+  min-width: 1226px;
+  height: 140px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+div.container div.TopNav {
+  width: 100%;
+  height: 40px;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  flex-direction: row  ;
+  flex-wrap: nowrap;
+  position: relative;
+}
+div.container div.TopNav > .TopNav_Box {
+  width: 1226px;
+  display: flex;
+  justify-content: space-between;
+}
+div.container div.TopNav > .TopNav_Box > .TopNav_Left {
+  display: flex;
+  width: 728px;
+  justify-content: space-around;
+}
+div.container div.TopNav > .TopNav_Box > .TopNav_Left > div.NavItem {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b0b0b0;
+  font-size: 12px;
+}
+div.container div.TopNav > .TopNav_Box > .TopNav_Left > div.NavItem:hover {
+  color: #ececec;
+}
+div.container div.TopNav > .TopNav_Box > .TopNav_Left > div.NavItem > span.sep {
+  height: 15.5px;
+  overflow: hidden;
+  margin: 0 0.3em;
+}
+div.container div.TopNav > .TopNav_Box > .TopNav_Rigth {
+  width: 260px;
+  height: 100%;
+  display: flex;
+  font-size: 12px;
+  color: #b0b0b0;
+}
+div.container div.TopNav > .TopNav_Box > .TopNav_Rigth > .Rigth_Nav {
+  display: flex;
+  width: 120px;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+div.container div.TopNav > .TopNav_Box > .TopNav_Rigth > .Rigth_Nav a {
+  color: #b0b0b0;
+}
+div.container div.TopNav > .TopNav_Box > .TopNav_Rigth > .Rigth_Nav .NavItem:hover {
+  color: #ececec;
+}
+div.container div.TopNav > .TopNav_Box > .TopNav_Rigth > .shopcar {
+  margin-left: 20px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  background-color: #424242;
+}
+div.container div.TopNav > .TopNav_Box > .TopNav_Rigth > .shopcar:hover {
+  color: #ececec;
+}
+div.container div.TopSearch {
+  width: 1226px;
+  height: 100px;
+}
+@keyframes open {
+  0% {
+    height: 0px;
+  }
+  50% {
+    height: 74px;
+  }
+  100% {
+    height: 148px;
+  }
+}
+@keyframes img {
+  0% {
+    height: 0px;
+  }
+  50% {
+    height: 45px;
+  }
+  100% {
+    height: 90px;
+  }
+}
+@keyframes xs {
+  100% {
+    opacity: 1;
+    visibility: visible;
+    color: #b0b0b0;
+  }
+}
+.out .pull_Download {
+  animation: open 0.2s reverse !important;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.out .imgbox img {
+  animation: img 0.2s reverse !important;
+  animation-fill-mode: forwards;
+}
+.out .info {
+  animation: xs 0.2s 0.1s reverse !important;
+  animation-fill-mode: forwards;
+}
+.download {
+  position: relative;
+}
+.download:hover > .pull_Download {
+  animation: open 0.2s;
+  animation-fill-mode: forwards;
+}
+.download:hover .imgbox img {
+  animation: img 0.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.download:hover .info {
+  animation: xs 0.2s 0.1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.download > .pull_Download {
+  transition: all 0.2s;
+  position: absolute;
+  z-index: 10;
+  width: 124px;
+  height: 0px;
+  display: flex;
+  flex-flow: column wrap;
+  top: 40px;
+  background-color: #eeecec;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.137);
+}
+.download > .pull_Download > .imgbox {
+  transition: all 0.2s;
+  margin: 18px 17px 12px 17px;
+}
+.download > .pull_Download > .imgbox img {
+  transition: all 0.2s;
+  width: 90px;
+  height: 0px;
+}
+.download > .pull_Download > .info {
+  transition: all 0.2s;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+.TopSearchBox {
+  width: 1226px;
+  height: 100px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.TopSearchBox .mi_logo {
+  position: relative;
+}
+.TopSearchBox .mi_logo img {
+  width: 56px;
+  height: 56px;
+}
+.TopSearchBox .leftSide {
+  width: 850px;
+  height: 100px;
+  display: flex;
+}
+.TopSearchBox .leftSide .Side {
+  width: 142px;
+  height: 100%;
+  position: relative;
+}
+.TopSearchBox .leftSide .Side .SideNav {
+  position: absolute;
+  width: 234px;
+  height: 460px;
+  top: 98px;
+  left: -70px;
+  z-index: 30;
+}
+.TopSearchBox .leftSide .Side .SideNav .NavList {
+  list-style: none;
+  position: relative;
+  padding: 20px 0px;
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  height: 100%;
+  background-color: #4242425e;
+}
+.TopSearchBox .leftSide .Side .SideNav .NavList .item {
+  font-weight: 500;
+  color: white;
+  width: 234px;
+  height: 42px;
+  padding-left: 30px;
+  line-height: 42px;
+}
+.TopSearchBox .leftSide .Side .SideNav .NavList .item:hover i {
+  color: #ffffff;
+}
+.TopSearchBox .leftSide .Side .SideNav .NavList .item i {
+  float: right;
+  margin-right: 10px;
+  color: #e2e2e2;
+}
+.TopSearchBox .leftSide .Side .SideNav .NavList .item .NavTab {
+  display: none;
+  box-shadow: 0px 3px 10px #2e2e2e;
+  position: absolute;
+  max-width: 1226px;
+  top: 0px;
+  left: 100%;
+  height: 461px;
+  flex-flow: column wrap;
+  background-color: #ffffff;
+}
+.TopSearchBox .leftSide .Side .SideNav .NavList .item .NavTab div.item {
+  display: flex;
+  height: 76px;
+}
+.TopSearchBox .leftSide .Side .SideNav .NavList .item .NavTab div.item div {
+  display: flex;
+  align-items: center;
+}
+.TopSearchBox .leftSide .Side .SideNav .NavList .item .NavTab div.item div:hover .info {
+  color: orange;
+}
+.TopSearchBox .leftSide .Side .SideNav .NavList .item .NavTab .item {
+  color: black;
+  width: 265px;
+  height: 76px;
+}
+.TopSearchBox .leftSide .Side .SideNav .NavList .item .NavTab .item img {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+}
+.TopSearchBox .leftSide .serchBox {
+  width: 608px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 16px;
+}
+.TopSearchBox .leftSide .serchBox a {
+  color: #000 !important;
+}
+.TopSearchBox .leftSide .serchBox .item {
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.3s;
+}
+.TopSearchBox .leftSide .serchBox .item:hover {
+  color: #ffd000;
+}
+.TopSearchBox .leftSide .serchBox .ShowBox {
+  position: absolute;
+  z-index: 50;
+  top: 140px;
+  height: 0px;
+  transition: all 0.2s;
+  border: 5px 0px solid black ;
+  box-shadow: 3px 3px 30px #585858;
+  overflow: hidden;
+  width: 100vw;
+  left: 0px;
+  background-color: white;
+}
+.TopSearchBox .leftSide .serchBox .ShowBox .itemBox {
+  width: 1226px;
+  height: 80%;
+  display: flex;
+  margin: 0px auto;
+}
+.TopSearchBox .leftSide .serchBox .ShowBox .itemBox .first {
+  border-left: 0px !important ;
+}
+.TopSearchBox .leftSide .serchBox .ShowBox .itemBox .item {
+  border-left: 1px solid rgba(148, 148, 148, 0.26);
+  border-right: 1px solid rgba(148, 148, 148, 0.26);
+  width: 204px;
+  height: 201px;
+  display: flex;
+  padding: 35px 12px 0px;
+  flex-flow: column wrap;
+  font-size: 12px;
+}
+.TopSearchBox .leftSide .serchBox .ShowBox .itemBox .item img {
+  width: 160px;
+  height: 110px;
+}
+.TopSearchBox .leftSide .serchBox .ShowBox .itemBox .item div {
+  color: #000;
+}
+.TopSearchBox .leftSide .serchBox .ShowBox .itemBox .item p {
+  color: orange;
+}
+.TopSearchBox .header-search {
+  width: 296px;
+  height: 50px;
+  display: flex;
+}
+.TopSearchBox .header-search input {
+  width: 245px;
+  height: 100%;
+  border: 1px rgba(128, 128, 128, 0.472) solid;
+  padding: 0px 10px;
+}
+.TopSearchBox .header-search div {
+  width: 51px;
+  height: 100%;
+  border: 1px rgba(128, 128, 128, 0.472) solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*# sourceMappingURL=./index.css.map */
